@@ -1,6 +1,7 @@
 :root {
   --font-body: Arial, Helvetica, sans-serif;
   --font-headline: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
   /* colors */
   --primary-color: #f0a868;
   --secondary-color: #525b0f;
@@ -115,6 +116,35 @@ button {
 }
 
 /* End utility classes */
+
+/* Start customizable alert styles */
+.alert {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.alert p {
+  padding: 0;
+  margin: 0;
+}
+
+#close-alert {
+  margin: 0;
+  padding: 0 0.5em;
+  background-color: transparent;
+  color: white;
+  font-size: 1.5em;
+  line-height: 1;
+}
+
+#close-alert:hover {
+  color: var(--primary-color);
+}
+/* End customizable alert styles */
 
 /* Cart icon styles */
 .cart {
