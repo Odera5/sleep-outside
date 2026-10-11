@@ -3,6 +3,7 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   root: "src/",
+  publicDir: "../public",
 
   build: {
     outDir: "../dist",
@@ -16,14 +17,8 @@ export default defineConfig({
           "src/product_pages/cedar-ridge-rimrock-2.html",
         ),
         product2: resolve(__dirname, "src/product_pages/marmot-ajax-3.html"),
-        product3: resolve(
-          __dirname,
-          "src/product_pages/northface-alpine-3.html",
-        ),
-        product4: resolve(
-          __dirname,
-          "src/product_pages/northface-talus-4.html",
-        ),
+        product3: resolve(__dirname, "src/product_pages/northface-alpine-3.html"),
+        product4: resolve(__dirname, "src/product_pages/northface-talus-4.html"),
       },
     },
   },
